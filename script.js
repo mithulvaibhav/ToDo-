@@ -5,7 +5,7 @@ let taskList = document.getElementById('taskList');
 
 function addTask() {
     let taskText = taskInput.value.trim();
-    if (taskText === '') return; 
+    if (taskText === '') return alert(" Enter a Task"); 
 
     let li = document.createElement('li');
 
