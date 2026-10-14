@@ -1,16 +1,16 @@
-const taskInput = document.getElementById('taskInput');
-const addButton = document.getElementById('addButton');
-const taskList = document.getElementById('taskList');
+let taskInput = document.getElementById('taskInput');
+let addButton = document.getElementById('addButton');
+let taskList = document.getElementById('taskList');
 
 
 function addTask() {
-    const taskText = taskInput.value.trim();
+    let taskText = taskInput.value.trim();
     if (taskText === '') return; 
 
-    const li = document.createElement('li');
+    let li = document.createElement('li');
 
     
-    const span = document.createElement('span');
+    let span = document.createElement('span');
     span.textContent = taskText;
     span.className = 'task-text';
     
@@ -19,7 +19,7 @@ function addTask() {
         li.classList.toggle('completed');
     });
 
-    const deleteBtn = document.createElement('button');
+    let deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
     deleteBtn.className = 'delete-btn';
     
